@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 let student = [
     { id: 1, name: 'ram' },
     { id: 2, name: 'laxman' },
@@ -6,6 +6,10 @@ let student = [
 ]
 export default function Events2() {
     const [data, setData] = useState(student);
+
+    const ref = useRef();
+
+    console.log(ref)
 
 
 
@@ -18,20 +22,28 @@ export default function Events2() {
         return <h1> Loading ...</h1>
     }
 
+    // refs referenced
+
+
+    // fragments
+
     return (
-        <div>
+        // fragments
+        <>
             {
                 data == null ? loader() :
                     data.map((item) => {
                         return <div key={item.id}>
-                            <p>{item.id}</p>
-                            <p>{item.name}</p>
-                            <button onClick={() => handleEdit(item.id)} >Edit</button>
+                            <ul>
+                                <li>{item.id}</li>
+                                <li>{item.name}</li>
+                                <li><button>Delete</button></li>
+                            </ul>
                         </div>
                     })
             }
 
-        </div>
+        </>
 
 
     )

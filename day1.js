@@ -130,21 +130,35 @@
 
 
 
-function Person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
-}
+// function Person(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+// }
 
 
-let obj1 = new Person("ram", "chandra", 21, "brown")
+// let obj1 = new Person("ram", "chandra", 21, "brown")
 
-let obj2 = new Person("krishna", "ji", 21, "brown")
+// let obj2 = new Person("krishna", "ji", 21, "brown")
 
-console.log(obj1)
-console.log(obj2)
+// console.log(obj1)
+// console.log(obj2)
 
 
 
 //object created
+
+
+let obj = {};
+
+obj.name = "ramesh"
+obj.age = "21"
+
+// name:"ramesh"
+
+console.log(obj)
+
+let arr = []
+arr.push("name")
+console.log(arr)

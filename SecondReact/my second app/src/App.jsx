@@ -7,6 +7,7 @@ import LifeCycleMthod from './Pages/LifeCycleMthod'
 import Hooks from './Pages/Hooks'
 import Events from './Pages/Events'
 import Events2 from './Pages/Events2'
+import RefHook from './Pages/RefHook'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
       {/* <LifeCycleMthod /> */}
       {/* <Hooks /> */}
       {/* <Events /> */}
-      <Events2 />
+      {/* <Events2 /> */}
+      <RefHook />
 
     </>
 
