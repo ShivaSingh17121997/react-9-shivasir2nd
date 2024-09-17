@@ -1,0 +1,72 @@
+{
+  "student": [
+    {
+      "name": "ram sita",
+      "email": "ram@gmail.com",
+      "password": "12345",
+      "id": 2,
+      "price": 3300,
+      "category": "god"
+    },
+    {
+      "name": "parvati shiv",
+      "email": "parvati@gamil.com",
+      "password": "1234",
+      "id": 3,
+      "price": 878,
+      "category": "brahm"
+    },
+    {
+      "name": "raghu ram",
+      "email": "raghu@gmail.com",
+      "password": "1234",
+      "id": 7,
+      "price": 3200,
+      "category": "god"
+    },
+    {
+      "name": "ram",
+      "email": "ram@gmail.com",
+      "password": "fa",
+      "id": 8,
+      "price": 9800,
+      "category": "god"
+    },
+    {
+      "name": "agni swaha",
+      "email": "agni@gamil.com",
+      "password": "faa",
+      "id": 10,
+      "price": 574,
+      "category": "dev"
+    },
+    {
+      "name": "ram leela",
+      "email": "ram@gmail.com",
+      "password": "12345",
+      "id": 11,
+      "price": 8709,
+      "category": "movie"
+    },
+    {
+      "name": "Surya chhaya",
+      "email": "Surya@gmail.com",
+      "password": "98765",
+      "id": 13,
+      "price": 909,
+      "category": "dev"
+    },
+    {
+      "name": "ram",
+      "email": "ram@gamil.con",
+      "password": "987",
+      "id": 14
+    },
+    {
+      "name": "kjhbv",
+      "email": "kjhg@gmai.comb",
+      "password": "kjhb",
+      "id": 15
+    }
+  ]
+}

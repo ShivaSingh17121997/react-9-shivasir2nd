@@ -1,0 +1,13 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content:space-between ;
+  padding: 20px;
+  background-color: rgb(255, 210, 143);
+  font-weight: bold;
+  text-decoration: none;
+}
