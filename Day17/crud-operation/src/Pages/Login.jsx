@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import PrivateRoute from '../Routes/PrivateRoute';
+import { AuthContext } from '../Context/AtuthContexProvider';
 
 export default function Login() {
     const [userName, setUserName] = useState("");
     const [password, setPasswrod] = useState("");
+    // const [token, setToken] = useState(null);
     const navigate = useNavigate();
+
+    const { login } = useContext(AuthContext); // destruring the login function 
+
 
     // add the values of useranme and password in teh local storage
 
@@ -26,6 +32,9 @@ export default function Login() {
             alert("user logged in successfully")
             token = "valid Token"
             console.log(token)
+
+            login(token)// login function is invoked here passed with argument token
+
             navigate("/form")
 
         } else {
@@ -51,6 +60,10 @@ export default function Login() {
                         <button>Login</button>
                     </div>
                 </form>
+            </div>
+
+            <div>
+                <PrivateRoute token={token} />
             </div>
         </div>
     )

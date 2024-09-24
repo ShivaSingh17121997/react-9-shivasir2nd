@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-
+import { useDebounce } from 'use-debounce';
+import Pagination from '../Component/Pagination';
 export default function Form() {
 
     const [name, setName] = useState("");
@@ -8,16 +9,13 @@ export default function Form() {
     const [studentData, setStudentData] = useState([]);  // global variable
     const [totalPage, setTotalPage] = useState([]);
     const [serarch, setSearch] = useState("");
+    const [debouncedSearch] = useDebounce(serarch, 2000); // Apply debounce here
     const [page, setPage] = useState(1);
     const [category, setCategory] = useState("");
-    console.log(category);
-
-
+    const [filterInRange, setFilterInRange] = useState("");
 
     // step 3 for edit
     const [editId, setEditId] = useState(null);
-
-
 
 
     const handleFormData = (event) => {
@@ -70,7 +68,7 @@ export default function Form() {
     // serach fun
     const handleSearch = () => {
         console.log(serarch)
-        fetchFun(serarch)
+        fetchFun(debouncedSearch)
     }
 
 
@@ -94,7 +92,7 @@ export default function Form() {
 
     const fetchFun = (search, page) => {
         console.log(search, "search fun")
-        fetch(`http://localhost:9000/student?_limit=2&_page=${page}&q=${search}`) // promise
+        fetch(`http://localhost:9000/student?_limit=3&_page=${page}&q=${search}`) // promise
             .then((res) => res.json())
             .then((data) => {
                 setStudentData(data)
@@ -106,12 +104,8 @@ export default function Form() {
     //  if dependency array is empty it will run only one time , when app loads, 
     // useEffect hook is use to manage side effect; 
     useEffect(() => {
-        fetchFun(serarch, page);
-    }, [serarch, page]);
-
-
-
-
+        fetchFun(debouncedSearch, page);
+    }, [debouncedSearch, page]);
 
 
 
@@ -172,6 +166,15 @@ export default function Form() {
         filteredData = studentData.filter((item) => item.category === category);  // filter returns new array of provided data
     }
 
+    // filtet by price range
+
+    if (filterInRange === "500-1000") {
+
+        let filterDatarange = studentData.filter((item) => item.price >= 500 && item.price <= 1000)
+        filteredData = filterDatarange
+    } else {
+        filteredData = studentData;
+    }
 
 
 
@@ -218,6 +221,15 @@ export default function Form() {
                     <option value="dev">Dev</option>
                     <option value="movie">Movie</option>
                 </select>
+
+                <div>
+
+                    <label >
+                        <input type="radio" value={filterInRange} onChange={(e) => setFilterInRange("500-1000")} />
+                        500-1000
+                    </label>
+                </div>
+
             </div>
 
 
@@ -249,9 +261,7 @@ export default function Form() {
 
             {/* pagination */}
             <div>
-                <button disabled={page <= 1} onClick={(e) => setPage(page - 1)} >Prev</button>
-                <button>{page}</button>
-                <button disabled={page === Math.ceil(totalPage.length / 2)} onClick={(e) => setPage(page + 1)} >Next</button>
+                <Pagination page={page} totalPage={totalPage} setPage={setPage} />
             </div>
         </div>
     )
