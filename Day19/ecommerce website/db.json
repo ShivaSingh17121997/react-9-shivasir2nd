@@ -1,0 +1,148 @@
+{
+  "products": [
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoRGyXmHy_6aIgXYqWHdOT3KjfmnuSyxypw&s",
+      "name": "Nikon Camera",
+      "price": "350000",
+      "quantity": "10",
+      "description": "this is a good camera that takes beautiful picturs .",
+      "category": "womens",
+      "id": 2
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "Smart watch",
+      "price": "1233",
+      "quantity": "33",
+      "description": "it is a good watch",
+      "category": "mens",
+      "id": 3
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "Smart watch",
+      "price": "1233",
+      "quantity": "33",
+      "description": "it is a good watch",
+      "category": "mens",
+      "id": 4
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "watcg",
+      "price": "876",
+      "quantity": "87",
+      "description": "nice watch",
+      "category": "mens",
+      "id": 5
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoC753Hr9M6fCIKdQA3bSsohm3hcOThH-FIw&s",
+      "name": "Water bottle",
+      "price": "322",
+      "quantity": "10",
+      "description": "it is a black and good looking digital water bottle",
+      "category": "",
+      "id": 6
+    },
+    {
+      "image": "https://images.meesho.com/images/products/274339144/jg32d_512.webp",
+      "name": "Almond body lotion",
+      "price": "232",
+      "quantity": "10",
+      "description": "it is a good almond body lotion",
+      "category": "womens",
+      "id": 7
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/81ARZdKVaWL.jpg",
+      "name": "Doctore set",
+      "price": "768",
+      "quantity": "10",
+      "description": "it is doctore set helps kids to paly with there friends ",
+      "category": "kids",
+      "id": 8
+    },
+    {
+      "image": "https://m.media-amazon.com/images/I/81ARZdKVaWL.jpg",
+      "name": "Doctore set",
+      "price": "768",
+      "quantity": "10",
+      "description": "it is doctore set helps kids to paly with there friends ",
+      "category": "kids",
+      "id": 9
+    },
+    {
+      "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2020/05/CE-Platter-with-Human-Models-1024x564.jpg",
+      "name": "samsung freez",
+      "price": "19876",
+      "quantity": "9",
+      "description": "it is a good freez that freez the water",
+      "category": "womens",
+      "id": 10
+    },
+    {
+      "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2020/05/CE-Platter-with-Human-Models-1024x564.jpg",
+      "name": "samsung freez",
+      "price": "19876",
+      "quantity": "9",
+      "description": "it is a good freez that freez the water",
+      "category": "womens",
+      "id": 11
+    },
+    {
+      "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2020/05/CE-Platter-with-Human-Models-1024x564.jpg",
+      "name": "samsung freez",
+      "price": "19876",
+      "quantity": "9",
+      "description": "it is a good freez that freez the water",
+      "category": "womens",
+      "id": 12
+    },
+    {
+      "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2020/05/CE-Platter-with-Human-Models-1024x564.jpg",
+      "name": "samsung freez",
+      "price": "19876",
+      "quantity": "9",
+      "description": "it is a good freez that freez the water",
+      "category": "womens",
+      "id": 13
+    },
+    {
+      "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2020/05/CE-Platter-with-Human-Models-1024x564.jpg",
+      "name": "samsung freez",
+      "price": "19876",
+      "quantity": "9",
+      "description": "it is a good freez that freez the water",
+      "category": "womens",
+      "id": 14
+    },
+    {
+      "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2020/05/CE-Platter-with-Human-Models-1024x564.jpg",
+      "name": "samsung freez",
+      "price": "19876",
+      "quantity": "9",
+      "description": "it is a good freez that freez the water",
+      "category": "womens",
+      "id": 15
+    },
+    {
+      "image": "https://img.global.news.samsung.com/in/wp-content/uploads/2020/05/CE-Platter-with-Human-Models-1024x564.jpg",
+      "name": "samsung freez",
+      "price": "19876",
+      "quantity": "998",
+      "description": "it is a good freez that freez the water",
+      "category": "womens",
+      "id": 16
+    },
+    {
+      "image": "https://m.media-amazon.com/images/G/01/CE/CEshowcase_320x320_bubblr_Headphones._SS287_QL85_FMpng_.png",
+      "name": "fa",
+      "price": "987",
+      "quantity": "87",
+      "description": "jhf",
+      "category": "womens",
+      "id": 17
+    }
+  ]
+}
