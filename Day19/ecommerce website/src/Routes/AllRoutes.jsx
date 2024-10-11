@@ -12,8 +12,6 @@ export default function AllRoutes() {
             <Route path='/products' element={<Products />} />
             <Route path='/singleproductpage/:id' element={<SingleProductPage />} />
             <Route path='/cart' element={<AddTocart />} />
-
-
         </Routes>
     )
 }

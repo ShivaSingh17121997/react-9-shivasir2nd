@@ -181,20 +181,80 @@
 
 
 
-let student = [
-    { name: "babalu", marks: 20 },
-    { name: "dabalu", marks: 30 },
-    { name: "sabalu", marks: 40 },
-    { name: "pabalu", marks: 50 },
-    { name: "jabalu", marks: 25 },
-]
+// let cart = [
+//     { name: "babalu", quantity: 2, price: 34 }, 68
+//     { name: "dabalu", quantity: 3, price: 3 }, 9
+//     { name: "sabalu", quantity: 4, price: 4 },16
+//     { name: "pabalu", quantity: 5, price: 64 },320
+//     { name: "jabalu", quantity: 2, price: 7 },14   
+// ]
 
 
-let totalMarks = student.reduce((acc, cv) => {
-    console.log(acc)
-    return acc += cv.marks
+// let totalquant = cart.reduce((acc, cv) => {
 
 
-}, 0)
+//     return acc + (cv.quantity * cv.price)
 
-console.log(totalMarks)
+
+// }, 0)
+
+// console.log(totalquant)
+
+
+// let a = 676.9889098765
+
+// console.log(a.toFixed(3))
+
+
+// map(()=>{}), flter, foreacch, reduce
+
+// let cart = [
+//     { name: "babalu", quantity: 2, price: 34 },
+//     { name: "dabalu", quantity: 3, price: 3 },
+//     { name: "sabalu", quantity: 4, price: 4 },
+//     { name: "pabalu", quantity: 5, price: 64 },
+//     { name: "jabalu", quantity: 2, price: 7 },
+
+// ]
+
+
+// let ans = cart.reduce((acc, cv,i) => {
+//     return <> acc + cv , i </>
+// }, );
+
+
+// console.log(ans)
+
+
+// let arr = [1, 28, 39, 84, 95];
+// // key value
+
+
+// let obj = arr.reduce((acc, cv, i, arr) => {
+//     return { ...acc, [i]: cv }
+// }, {})
+
+// console.log(obj);
+
+
+// let quantity = [
+//     { id: 2, quantity: 2 },
+//     { id: 3, quantity: 4 },
+//     { id: 4, quantity: 8 }
+// ]
+
+// let cart = [
+//     { id: 2, quantity: 2, price: 98 },
+//     { id: 3, quantity: 4, price: 87 },
+//     { id: 4, quantity: 8, price: 86 }
+// ]
+
+
+// let total = quantity.reduce((acc, cv) => {
+//     let productPrice = cart.find((item) => item.id === cv.id)
+
+//     return acc + (cv.quantity * productPrice.price)
+
+// }, 0)
+
+// console.log(total)

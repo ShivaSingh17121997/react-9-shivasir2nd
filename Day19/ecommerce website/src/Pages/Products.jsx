@@ -17,7 +17,7 @@ export default function Products() {
     // Fetch products based on search query
     useEffect(() => {
         console.log(page)
-        axios.get(`http://localhost:8000/products?_limit=8&_page=${page}&q=${search}`)
+        axios.get(`http://localhost:8000/products?_limit=4&_page=${page}&q=${search}`)
             .then((data) => {
                 dispatch({ type: GET_PRODUCTS, payload: data.data });
             });
@@ -125,7 +125,7 @@ export default function Products() {
             {/* pagination */}
 
             <div>
-                 <Pagination page={page} incPage={setPage} /> 
+                <Pagination page={page} incPage={setPage} />
             </div>
 
 

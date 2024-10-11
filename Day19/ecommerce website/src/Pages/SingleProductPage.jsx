@@ -2,13 +2,13 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import AddTocart from '../Component/AddTocart';
 import { ADD_TO_CART } from '../redux/ActionType';
 
 export default function SingleProductPage() {
     const [singleProdData, setSingleProdData] = useState({})
     const { id } = useParams();
     const dispatch = useDispatch();
+
     console.log(id);
 
     useEffect(() => {
@@ -19,9 +19,14 @@ export default function SingleProductPage() {
             });
     }, []);
 
+    // add to cart function
     const handleAddToCart = () => {
         dispatch({ type: ADD_TO_CART, payload: singleProdData })
     }
+
+
+
+
 
 
     return (
@@ -37,3 +42,4 @@ export default function SingleProductPage() {
         </div>
     )
 }
+//  btton ==> data added to the cart // cart = []=  ==> map ==>
