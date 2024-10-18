@@ -5,7 +5,6 @@ import { REMOVE_FROM_CART } from '../redux/ActionType';
 
 export default function AddToCart() {
 
-
     const cartData = useSelector(store => store.cart);
 
     // cart = 4 = > id, qunatiy ;
