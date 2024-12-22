@@ -1,13 +1,15 @@
 
 import './App.css'
-import Form from './Pages/Form'
+import Navbar from './components/Navbar'
+import AllRoutes from './Pages/AllRoutes'
 
 function App() {
 
   return (
-    <>
-      <Form />
-    </>
+    <div style={{display:"flex", justifyContent:"space-between"}}>
+      <Navbar/>
+      <AllRoutes/>
+    </div>
   )
 }
 
